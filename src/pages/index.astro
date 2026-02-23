@@ -7,16 +7,16 @@ import Layout from "../layouts/Layout.astro";
   description="DROZD SKUP ZŁOMU I SPRZEDAŻ KRUSZYWA, KAMIENI, GRANITU POLICE. Najlepsze ceny, szybki transport na miejsce."
 >
   <nav
-    class="sticky top-5 bg-white rounded-full shadow-md z-50 py-3 px-5 lg:py-4 lg:px-10 flex justify-between items-center mb-12"
+    class="sticky top-4 bg-white rounded-full shadow-md z-50 py-5 px-5 sm:py-6 sm:px-8 flex justify-between items-center mb-8"
   >
-    <a href="/" class="flex items-center gap-2 sm:gap-4 shrink-0">
+    <a href="/" class="flex items-center gap-3 sm:gap-4 shrink-0">
       <img
         src="/img/scrap.webp"
         alt="Drozd Logo"
-        class="w-10 h-10 lg:w-14 lg:h-14 object-contain"
+        class="w-14 h-14 sm:w-16 sm:h-16 object-contain"
       />
       <span
-        class="text-base sm:text-lg lg:text-2xl font-black text-[#002333] whitespace-nowrap"
+        class="text-2xl sm:text-4xl lg:text-4xl font-black text-[#002333] whitespace-nowrap tracking-tight leading-none"
       >
         Drozd <span class="text-[#159A9C]">| Skup Złomu</span>
       </span>
@@ -49,12 +49,12 @@ import Layout from "../layouts/Layout.astro";
 
       <button
         id="mobile-menu-btn"
-        class="lg:hidden p-2 text-[#002333] hover:text-[#159A9C] focus:outline-none transition-colors"
+        class="lg:hidden p-1 text-[#002333] hover:text-[#159A9C] focus:outline-none transition-colors"
         aria-label="Otwórz menu"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8 sm:h-10 sm:w-10"
+          class="h-12 w-12 sm:h-14 sm:w-14"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -70,7 +70,7 @@ import Layout from "../layouts/Layout.astro";
   </nav>
 
   <header
-    class="relative bg-[#002333] text-white rounded-[40px] overflow-hidden mb-16 shadow-2xl mt-4"
+    class="relative bg-[#002333] text-white rounded-[40px] overflow-hidden mb-10 shadow-2xl mt-4"
   >
     <div class="absolute inset-0 opacity-40 mix-blend-overlay">
       <img
@@ -81,10 +81,10 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div
-      class="relative z-10 p-10 md:p-24 text-center md:text-left flex flex-col md:w-2/3"
+      class="relative z-10 p-10 md:p-20 lg:p-24 text-center md:text-left flex flex-col md:w-2/3"
     >
       <h1
-        class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight"
+        class="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight"
       >
         Twój zaufany <span class="text-[#159A9C]">skup złomu</span> w Policach
       </h1>
@@ -102,7 +102,7 @@ import Layout from "../layouts/Layout.astro";
           >📞 Zadzwoń po wycenę</a
         >
         <a
-          href="https://maps.app.goo.gl/EThrLSFi8AxaDJ3H6"
+          href="https://maps.google.com/?q=Starzyńskiego+15,+72-010+Police"
           target="_blank"
           class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold text-lg transition-colors border border-white/20 text-center"
           >📍 Jak dojechać?</a
@@ -111,13 +111,15 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </header>
 
-  <section id="zlom" class="py-16 md:py-24 max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-5xl md:text-6xl font-black text-[#002333] tracking-tight">
+  <section id="zlom" class="py-10 md:py-16 max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-8 md:mb-10">
+      <h2
+        class="text-4xl md:text-5xl font-black text-[#002333] tracking-normal"
+      >
         Skup Złomu
       </h2>
       <p
-        class="text-xl md:text-2xl font-medium text-[#002333]/70 mt-4 max-w-2xl mx-auto"
+        class="text-lg md:text-xl font-medium text-[#002333]/70 mt-3 max-w-2xl mx-auto"
       >
         Przyjmujemy każdy rodzaj metalu. Sprawdź naszą ofertę.
       </p>
@@ -187,13 +189,15 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="piasek" class="py-16 md:py-24 max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-5xl md:text-6xl font-black text-[#002333] tracking-tight">
+  <section id="piasek" class="py-10 md:py-16 max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-8 md:mb-10">
+      <h2
+        class="text-4xl md:text-5xl font-black text-[#002333] tracking-normal"
+      >
         Kruszywa i Piasek
       </h2>
       <p
-        class="text-xl md:text-2xl font-medium text-[#002333]/70 mt-4 max-w-2xl mx-auto"
+        class="text-lg md:text-xl font-medium text-[#002333]/70 mt-3 max-w-2xl mx-auto"
       >
         Materiały na każdą budowę z bezpośrednim transportem.
       </p>
@@ -266,14 +270,16 @@ import Layout from "../layouts/Layout.astro";
 
   <section
     id="contact"
-    class="py-16 md:py-24 max-w-5xl mx-auto w-full px-4 sm:px-6"
+    class="py-10 md:py-16 max-w-5xl mx-auto w-full px-4 sm:px-6 mb-10"
   >
-    <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-5xl md:text-6xl font-black text-[#002333] tracking-tight">
+    <div class="text-center mb-8 md:mb-10">
+      <h2
+        class="text-4xl md:text-5xl font-black text-[#002333] tracking-normal"
+      >
         Kontakt i Dojazd
       </h2>
       <p
-        class="text-xl md:text-2xl font-medium text-[#002333]/70 mt-4 max-w-2xl mx-auto"
+        class="text-lg md:text-xl font-medium text-[#002333]/70 mt-3 max-w-2xl mx-auto"
       >
         Masz pytania? Zadzwoń lub odwiedź nasz plac.
       </p>
@@ -440,7 +446,6 @@ import Layout from "../layouts/Layout.astro";
       const links = document.querySelectorAll(".mobile-link");
 
       function toggleMenu() {
-        // Znak zapytania mówi: "Zmień klasę tylko wtedy, jeśli menu na pewno istnieje"
         menu?.classList.toggle("hidden");
         menu?.classList.toggle("flex");
         document.body.classList.toggle("overflow-hidden");
