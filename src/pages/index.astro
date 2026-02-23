@@ -284,9 +284,7 @@ import Layout from "../layouts/Layout.astro";
     class="py-10 md:py-16 max-w-5xl mx-auto w-full px-4 sm:px-6 mb-10"
   >
     <div class="text-center mb-8 md:mb-10">
-      <h2
-        class="text-4xl md:text-5xl font-black text-[#002333] tracking-normal"
-      >
+      <h2 class="text-4xl md:text-5xl font-black text-[#002333]">
         Kontakt i Dojazd
       </h2>
       <p
@@ -299,11 +297,6 @@ import Layout from "../layouts/Layout.astro";
     <div
       class="bg-[#002333] text-white rounded-[40px] p-8 md:p-12 lg:p-16 shadow-2xl relative overflow-hidden w-full"
     >
-      <div
-        class="absolute -top-24 -right-24 w-64 h-64 bg-[#159A9C] font-bold rounded-full mix-blend-multiply filter blur-3xl opacity-20"
-      >
-      </div>
-
       <div
         class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 text-center relative z-10 mb-12"
       >
@@ -320,7 +313,6 @@ import Layout from "../layouts/Layout.astro";
             Sobota: 8:00 - 13:00
           </p>
         </div>
-
         <div
           class="flex flex-col items-center justify-start border-y lg:border-y-0 lg:border-x border-white/10 py-8 lg:py-0"
         >
@@ -331,11 +323,10 @@ import Layout from "../layouts/Layout.astro";
           </h3>
           <a
             href="tel:502732306"
-            class="text-3xl font-black text-red-500 hover:text-red-400 transition-transform hover:scale-105 block whitespace-nowrap"
+            class="text-3xl font-black text-red-500 hover:text-red-400 block"
             >502-732-306</a
           >
         </div>
-
         <div class="flex flex-col items-center justify-start">
           <h3
             class="text-sm md:text-base text-gray-400 font-bold mb-4 uppercase tracking-widest"
@@ -344,19 +335,17 @@ import Layout from "../layouts/Layout.astro";
           </h3>
           <a
             href="mailto:kontakt@drozdskup.pl"
-            class="text-xl md:text-2xl font-bold text-[#159A9C] hover:text-white transition-colors"
+            class="text-xl md:text-2xl font-bold text-[#159A9C]"
             >kontakt@drozdskup.pl</a
           >
         </div>
       </div>
 
-      <div class="border-t border-white/10 pt-10 relative z-10">
+      <div class="border-t border-white/10 pt-10 relative z-10 mb-10">
         <div
-          class="flex flex-col md:flex-row justify-between items-center gap-10 mb-10 w-full"
+          class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 text-center lg:text-left"
         >
-          <div
-            class="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-1/2"
-          >
+          <div class="flex flex-col items-center lg:items-start">
             <h4
               class="text-sm text-gray-400 font-bold mb-2 uppercase tracking-widest"
             >
@@ -368,9 +357,9 @@ import Layout from "../layouts/Layout.astro";
             </p>
           </div>
 
-          <div
-            class="flex flex-col items-center md:items-end text-center md:text-right w-full md:w-1/2"
-          >
+          <div class="hidden lg:block"></div>
+
+          <div class="flex flex-col items-center lg:items-start">
             <h4
               class="text-sm text-gray-400 font-bold mb-2 uppercase tracking-widest"
             >
@@ -378,28 +367,30 @@ import Layout from "../layouts/Layout.astro";
             </h4>
             <p>
               <a
-                href="https://maps.app.goo.gl/S17kQafoWZ7zdbf5A"
+                href="https://maps.google.com/?q=Stefana+Starzyńskiego+15,72-010+Police"
                 target="_blank"
-                class="text-[#159A9C] hover:text-white transition-colors font-bold text-xl md:text-2xl"
+                class="text-[#159A9C] font-bold text-xl md:text-2xl hover:text-white transition-colors"
               >
                 ul. Starzyńskiego 15, 72-010 Police
               </a>
             </p>
           </div>
         </div>
+      </div>
 
-        <div
-          class="w-full h-80 lg:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 bg-gray-900"
+      <div
+        class="w-full h-80 lg:h-[450px] rounded-3xl overflow-hidden border-4 border-white/10 bg-gray-900 shadow-2xl relative z-10"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.750615600689!2d14.56062041432215!3d53.55615097267938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa735ab02af1a5%3A0x8bef0b99b30eff06!2sDROZD%20SKUP%20Z%C5%81OMU%20I%20SPRZEDA%C5%BB%20PIASKU%20KRUSZYWA%2CKAMIENI%2CGRANITU%20POLICE!5e1!3m2!1spl!2spl!4v1771867801792!5m2!1spl!2spl"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.750615600689!2d14.56062041432215!3d53.55615097267938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa735ab02af1a5%3A0x8bef0b99b30eff06!2sDROZD%20SKUP%20Z%C5%81OMU%20I%20SPRZEDA%C5%BB%20PIASKU%20KRUSZYWA%2CKAMIENI%2CGRANITU%20POLICE!5e1!3m2!1spl!2spl!4v1771867801792!5m2!1spl!2spl"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </iframe>
       </div>
     </div>
   </section>
