@@ -1,0 +1,340 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Oferta - Drozd Skup Złomu i Sprzedaż Kruszywa"
+  description="Poznaj szczegóły naszej oferty. Skup złomu stalowego, metali kolorowych oraz sprzedaż i transport kruszywa, piasku i żwiru."
+>
+  <nav
+    class="sticky top-4 bg-white rounded-full shadow-md z-50 py-3 px-5 sm:py-4 sm:px-8 flex justify-between items-center mb-10 max-w-6xl mx-auto"
+  >
+    <a href="/" class="flex items-center gap-3 sm:gap-4 shrink-0">
+      <img
+        src="/img/scrap.webp"
+        alt="Drozd Logo"
+        class="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+      />
+      <span
+        class="text-2xl sm:text-4xl lg:text-4xl font-black text-[#002333] whitespace-nowrap tracking-tight leading-none"
+      >
+        Drozd <span class="text-[#159A9C]">| Skup Złomu</span>
+      </span>
+    </a>
+
+    <ul
+      class="hidden lg:flex gap-8 xl:gap-12 text-xl xl:text-2xl font-bold text-[#002333]"
+    >
+      <li>
+        <a href="/#zlom" class="hover:text-[#159A9C] transition-colors">Złom</a>
+      </li>
+      <li>
+        <a href="/#piasek" class="hover:text-[#159A9C] transition-colors"
+          >Piasek</a
+        >
+      </li>
+      <li><a href="/oferta" class="text-[#159A9C]">Oferta</a></li>
+      <li>
+        <a href="/#contact" class="hover:text-[#159A9C] transition-colors"
+          >Kontakt</a
+        >
+      </li>
+    </ul>
+
+    <div class="flex items-center gap-4 shrink-0">
+      <a
+        href="tel:502732306"
+        class="hidden lg:block bg-red-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-700 transition-transform hover:scale-105 shadow-md"
+        >Zadzwoń</a
+      >
+
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-1 text-[#002333] hover:text-[#159A9C] focus:outline-none transition-colors"
+        aria-label="Otwórz menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-12 w-12 sm:h-14 sm:w-14"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6">
+    <header class="text-center mb-16">
+      <h1 class="text-5xl md:text-6xl font-black text-[#002333] mb-4">
+        Nasza <span class="text-[#159A9C]">Oferta</span>
+      </h1>
+      <p class="text-xl text-gray-600 font-medium">
+        Poznaj szczegóły naszych usług i sprawdź, co możemy dla Ciebie zrobić.
+      </p>
+    </header>
+
+    <section
+      class="bg-white rounded-[40px] shadow-xl p-8 md:p-12 mb-12 border border-gray-100 relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 w-32 h-32 bg-[#159A9C] rounded-bl-full opacity-10"
+      >
+      </div>
+      <h2
+        class="text-3xl font-black text-[#002333] mb-6 flex items-center gap-3"
+      >
+        <span class="text-4xl">♻️</span> Skup Złomu i Metali Kolorowych
+      </h2>
+      <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+        Specjalizujemy się w profesjonalnym i szybkim skupie każdego rodzaju
+        złomu. Oferujemy uczciwą klasyfikację materiału na legalizowanej wadze
+        oraz natychmiastową płatność (gotówka lub przelew).
+      </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-bold text-[#159A9C] mb-3">Złom Stalowy:</h3>
+          <ul class="space-y-2 text-gray-700 font-medium list-disc list-inside">
+            <li>Złom gruby (wsadowy)</li>
+            <li>Złom lekki (blachy, wióry)</li>
+            <li>Żeliwo maszynowe i handlowe</li>
+            <li>Profile, rury i konstrukcje stalowe</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-[#159A9C] mb-3">
+            Metale Kolorowe:
+          </h3>
+          <ul class="space-y-2 text-gray-700 font-medium list-disc list-inside">
+            <li>Miedź (Milenbera, kawałkowa, nawojowa)</li>
+            <li>Aluminium (felgi, puszki, profile, odlewy)</li>
+            <li>Mosiądz i brąz</li>
+            <li>Ołów, cynk, stal kwasoodporna</li>
+            <li>Akumulatory ołowiowe</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#002333] text-white rounded-[40px] shadow-xl p-8 md:p-12 mb-16 relative overflow-hidden"
+    >
+      <div
+        class="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-tl-full opacity-5"
+      >
+      </div>
+      <h2 class="text-3xl font-black mb-6 flex items-center gap-3">
+        <span class="text-4xl">🚧</span> Sprzedaż Piasku i Kruszyw
+      </h2>
+      <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+        Dostarczamy najwyższej jakości kruszywa budowlane i drogowe z
+        bezpośrednim, szybkim transportem na miejsce Twojej inwestycji.
+        Posiadamy wywrotki, które dowiozą materiał tam, gdzie go potrzebujesz.
+      </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-bold text-[#159A9C] mb-3">
+            Kruszywa i Piasek:
+          </h3>
+          <ul class="space-y-2 text-gray-300 font-medium list-disc list-inside">
+            <li>Piasek płukany (0-2 mm) - do wylewek i murowania</li>
+            <li>Piasek zasypowy (na fundamenty i zasypki)</li>
+            <li>Żwir i otoczaki (różne frakcje np. 2-8, 8-16)</li>
+            <li>Kruszywa łamane, granit, tłuczeń</li>
+            <li>Mieszanki podbudowowe i drenażowe</li>
+          </ul>
+        </div>
+        <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+          <h3 class="text-xl font-bold text-white mb-2">
+            🚚 Transport pod wskazany adres
+          </h3>
+          <p class="text-sm text-gray-300">
+            Koszt transportu wyceniamy indywidualnie w zależności od ilości
+            zamawianego materiału oraz odległości od naszego placu w Policach.
+            Zadzwoń, a zrobimy to od ręki!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-gray-50 rounded-[40px] shadow-lg p-8 md:p-12 mb-20 border border-gray-200"
+    >
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-black text-[#002333] mb-3">
+          Wyślij zapytanie
+        </h2>
+        <p class="text-gray-600">
+          Chcesz poznać aktualną cenę złomu lub koszt transportu piasku? Napisz
+          do nas!
+        </p>
+      </div>
+
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="max-w-2xl mx-auto space-y-6"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="3feb90d7-2f0c-4dfb-b1b3-2166a14c64ef"
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="Nowe zapytanie ze strony DrozdSkup!"
+        />
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none;"
+        />
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-bold text-[#002333] mb-2"
+              >Imię / Firma</label
+            >
+            <input
+              type="text"
+              name="name"
+              required
+              class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-[#002333] mb-2"
+              >Numer telefonu</label
+            >
+            <input
+              type="tel"
+              name="phone"
+              required
+              class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold text-[#002333] mb-2"
+            >Adres e-mail</label
+          >
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold text-[#002333] mb-2"
+            >Treść wiadomości</label
+          >
+          <textarea
+            name="message"
+            rows="5"
+            required
+            placeholder="Napisz, jakiej ilości materiału dotyczy wycena..."
+            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white resize-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-[#159A9C] text-white font-bold text-xl py-5 rounded-xl hover:bg-[#0f7a7c] transition-colors shadow-lg"
+        >
+          Wyślij wiadomość 🚀
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 bg-[#002333]/95 z-[100] hidden flex-col items-center justify-center backdrop-blur-md transition-opacity"
+  >
+    <button
+      id="close-menu-btn"
+      class="absolute top-8 right-8 text-white hover:text-red-500 p-2 transition-colors"
+      aria-label="Zamknij menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-12"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <ul class="flex flex-col gap-12 text-center text-5xl font-black text-white">
+      <li class="py-4">
+        <a
+          href="/#zlom"
+          class="mobile-link hover:text-[#159A9C] transition-colors">Złom</a
+        >
+      </li>
+      <li class="py-4">
+        <a
+          href="/#piasek"
+          class="mobile-link hover:text-[#159A9C] transition-colors">Piasek</a
+        >
+      </li>
+      <li class="py-4">
+        <a
+          href="/oferta"
+          class="mobile-link hover:text-[#159A9C] transition-colors">Oferta</a
+        >
+      </li>
+      <li class="py-4">
+        <a
+          href="/#contact"
+          class="mobile-link hover:text-[#159A9C] transition-colors">Kontakt</a
+        >
+      </li>
+    </ul>
+    <a
+      href="tel:502732306"
+      class="mt-20 bg-red-600 text-white px-16 py-5 rounded-full font-bold text-3xl shadow-lg hover:bg-red-700 transition-colors"
+      >📞 Zadzwoń</a
+    >
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("mobile-menu-btn");
+      const closeBtn = document.getElementById("close-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const links = document.querySelectorAll(".mobile-link");
+
+      function toggleMenu() {
+        menu?.classList.toggle("hidden");
+        menu?.classList.toggle("flex");
+        document.body.classList.toggle("overflow-hidden");
+      }
+
+      if (btn && closeBtn && menu) {
+        btn.addEventListener("click", toggleMenu);
+        closeBtn.addEventListener("click", toggleMenu);
+        links.forEach((link) => {
+          link.addEventListener("click", toggleMenu);
+        });
+      }
+    });
+  </script>
+</Layout>

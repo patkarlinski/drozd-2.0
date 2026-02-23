@@ -30,17 +30,18 @@ import Layout from "../layouts/Layout.astro";
       </li>
       <li>
         <a href="#piasek" class="hover:text-[#159A9C] transition-colors"
-          >Piasek</a>
+          >Piasek</a
+        >
       </li>
       <li>
-        <a
-          href="/oferta"
-          class="hover:text-[#159A9C] transition-colors text-[#159A9C]"
-          >Oferta</a>
+        <a href="/oferta" class="hover:text-[#159A9C] transition-colors"
+          >Oferta</a
+        >
       </li>
       <li>
         <a href="#contact" class="hover:text-[#159A9C] transition-colors"
-          >Kontakt</a>
+          >Kontakt</a
+        >
       </li>
     </ul>
 
@@ -115,159 +116,160 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </header>
 
-  <section id="zlom" class="py-10 md:py-16 max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-8 md:mb-10">
-      <h2
-        class="text-4xl md:text-5xl font-black text-[#002333] tracking-normal"
-      >
-        Skup Złomu
-      </h2>
-      <p
-        class="text-lg md:text-xl font-medium text-[#002333]/70 mt-3 max-w-2xl mx-auto"
-      >
-        Przyjmujemy każdy rodzaj metalu. Sprawdź naszą ofertę.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[250px]">
+  <section id="zlom" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+    <div
+      class="relative rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl bg-[#002333]"
+    >
+      <img
+        src="/img/tlo3.webp"
+        alt="Skup Złomu"
+        class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay"
+      />
       <div
-        class="md:col-span-2 md:row-span-2 rounded-[40px] overflow-hidden relative group shadow-2xl min-h-[350px] md:min-h-0"
+        class="absolute inset-0 bg-gradient-to-br from-[#002333] via-[#002333]/80 to-transparent"
       >
-        <img
-          src="/img/tlo3.webp"
-          alt="Skup złomu"
-          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-[#002333] via-[#002333]/80 to-black/40"
-        >
-        </div>
-        <div class="absolute bottom-0 left-0 p-6 sm:p-8 md:p-12">
-          <h3
-            class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 leading-tight drop-shadow-lg"
+      </div>
+
+      <div
+        class="relative z-10 p-8 md:p-16 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+      >
+        <div class="text-center lg:text-left">
+          <h2
+            class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight"
           >
-            Najlepsze<br /><span class="text-[#159A9C]">ceny w regionie</span>
-          </h3>
-          <p class="text-gray-200 text-base md:text-lg max-w-md drop-shadow-md">
-            Posiadamy legalizowaną wagę, płacimy od ręki i gwarantujemy uczciwą
-            klasyfikację surowca.
+            Skup<br /><span class="text-[#159A9C]">Złomu</span>
+          </h2>
+          <p
+            class="text-xl md:text-2xl text-gray-300 font-light mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+          >
+            Najlepsze ceny w regionie. Posiadamy legalizowaną wagę, płacimy od
+            ręki i gwarantujemy uczciwą klasyfikację surowca.
           </p>
-        </div>
-      </div>
-
-      <div
-        class="bg-[#002333] rounded-[40px] p-8 flex flex-col justify-center shadow-xl hover:-translate-y-2 transition-transform duration-300 group"
-      >
-        <div
-          class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 text-[#159A9C] group-hover:bg-[#159A9C] group-hover:text-white transition-colors shrink-0"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-            ></path></svg
+          <a
+            href="/oferta"
+            class="inline-block bg-[#159A9C] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[#002333] transition-colors shadow-lg"
           >
+            📄 Zobacz pełną ofertę
+          </a>
         </div>
-        <h4 class="text-2xl font-bold text-white mb-2">Złom stalowy</h4>
-        <p class="text-gray-400 leading-relaxed">
-          Złom ciężki, lekki, blachy, żeliwo oraz stal wsadowa i niewsadowa.
-        </p>
-      </div>
 
-      <div
-        class="bg-[#159A9C] rounded-[40px] p-8 flex flex-col justify-center shadow-xl hover:-translate-y-2 transition-transform duration-300 text-[#002333]"
-      >
-        <h4 class="text-2xl font-black mb-3 text-white">Metale kolorowe</h4>
-        <p class="font-semibold text-[#002333]/80 leading-relaxed">
-          Miedź, mosiądz, aluminium, brąz, ołów, cynk, a także akumulatory i
-          puszki.
-        </p>
+        <div class="flex flex-col gap-6 text-center lg:text-left">
+          <div
+            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
+          >
+            <h3
+              class="text-2xl font-bold text-white mb-4 flex items-center justify-center lg:justify-start gap-3"
+            >
+              <span class="text-3xl">⚙️</span> Złom stalowy
+            </h3>
+            <ul
+              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+            >
+              <li>Złom ciężki i lekki</li>
+              <li>Blachy i żeliwo</li>
+              <li>Stal wsadowa i niewsadowa</li>
+              <li>Konstrukcje (każdy gabaryt)</li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
+          >
+            <h3
+              class="text-2xl font-bold text-white mb-4 flex items-center justify-center lg:justify-start gap-3"
+            >
+              <span class="text-3xl">🔋</span> Metale kolorowe
+            </h3>
+            <ul
+              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+            >
+              <li>Miedź, mosiądz, brąz</li>
+              <li>Aluminium i puszki po napojach</li>
+              <li>Ołów i cynk</li>
+              <li>Akumulatory ołowiowe</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="piasek" class="py-10 md:py-16 max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-8 md:mb-10">
-      <h2
-        class="text-4xl md:text-5xl font-black text-[#002333] tracking-normal"
-      >
-        Kruszywa i Piasek
-      </h2>
-      <p
-        class="text-lg md:text-xl font-medium text-[#002333]/70 mt-3 max-w-2xl mx-auto"
-      >
-        Materiały na każdą budowę z bezpośrednim transportem.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:auto-rows-[220px]">
+  <section id="piasek" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+    <div
+      class="relative rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl bg-[#002333]"
+    >
+      <img
+        src="/img/tlo2.webp"
+        alt="Transport piasku i kruszywa"
+        class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay"
+      />
       <div
-        class="md:col-span-1 md:row-span-2 bg-[#002333] rounded-[40px] p-8 flex flex-col shadow-xl hover:-translate-y-2 transition-transform duration-300 min-h-[280px] md:min-h-0 overflow-hidden"
+        class="absolute inset-0 bg-gradient-to-bl from-[#002333] via-[#002333]/80 to-transparent"
       >
-        <h4 class="text-3xl font-black text-white mb-4">
-          Szybki<br /><span class="text-[#159A9C]">Transport</span>
-        </h4>
-        <p class="text-gray-400">
-          Dostarczamy zamówiony materiał prosto na Twoją budowę, dokładnie na
-          czas.
-        </p>
-        <div
-          class="mt-auto pt-6 text-6xl group-hover:scale-110 transition-transform origin-left"
-        >
-          🚚
-        </div>
       </div>
 
       <div
-        class="md:col-span-2 md:row-span-2 rounded-[40px] overflow-hidden relative group shadow-2xl min-h-[300px] md:min-h-0"
+        class="relative z-10 p-8 md:p-16 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
       >
-        <img
-          src="/img/tlo2.webp"
-          alt="Piasek i Kruszywa"
-          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
         <div
-          class="absolute inset-0 bg-gradient-to-t from-[#002333] via-[#002333]/80 to-black/20"
+          class="flex flex-col gap-6 order-2 lg:order-1 text-center lg:text-left"
         >
-        </div>
-        <div class="absolute bottom-0 left-0 p-6 sm:p-8 md:p-10">
-          <h3
-            class="text-3xl sm:text-4xl font-black text-white drop-shadow-lg mb-3"
+          <div
+            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
           >
-            Najwyższa jakość
-          </h3>
+            <h3
+              class="text-2xl font-bold text-white mb-4 flex items-center justify-center lg:justify-start gap-3"
+            >
+              <span class="text-3xl">🏖️</span> Różne rodzaje piasku
+            </h3>
+            <ul
+              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+            >
+              <li>Piasek płukany (0-2 mm)</li>
+              <li>Piasek do wylewek i murowania</li>
+              <li>Piasek zasypowy na fundamenty</li>
+              <li>Czysty piasek do piaskownic</li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
+          >
+            <h3
+              class="text-2xl font-bold text-white mb-4 flex items-center justify-center lg:justify-start gap-3"
+            >
+              <span class="text-3xl">🪨</span> Żwiry i Kruszywa
+            </h3>
+            <ul
+              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+            >
+              <li>Żwiry płukane (2-8, 8-16, 16-32 mm)</li>
+              <li>Kruszywa łamane</li>
+              <li>Tłuczeń drogowy</li>
+              <li>Mieszanki podbudowowe</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2 text-center lg:text-right">
+          <h2
+            class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight"
+          >
+            Szybki<br /><span class="text-[#159A9C]">Transport</span>
+          </h2>
           <p
-            class="text-gray-200 text-base md:text-lg font-medium max-w-md drop-shadow-md leading-relaxed"
+            class="text-xl md:text-2xl text-gray-300 font-light mb-10 max-w-lg mx-auto lg:ml-auto lg:mr-0 leading-relaxed"
           >
-            Posiadamy szeroki wybór kruszyw o różnych frakcjach. Realizujemy
-            również dostawy nietypowego materiału na specjalne zamówienie.
+            Zapewniamy profesjonalny dowóz kruszyw własnymi wywrotkami.
+            Obsługujemy duże place budowy oraz prywatne posesje.
           </p>
+          <a
+            href="/oferta"
+            class="inline-block bg-[#159A9C] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[#002333] transition-colors shadow-lg"
+          >
+            📄 Oferta kruszyw
+          </a>
         </div>
-      </div>
-
-      <div
-        class="md:col-span-1 md:row-span-1 bg-gray-100 rounded-[40px] p-8 flex flex-col justify-center shadow-md hover:-translate-y-2 transition-transform duration-300 border-2 border-transparent hover:border-[#159A9C]/30"
-      >
-        <h4 class="text-xl font-bold text-[#002333] mb-2">Piasek</h4>
-        <p class="text-gray-600 text-sm">
-          Budowlany do murowania oraz czysty piasek, idealny do piaskownic.
-        </p>
-      </div>
-
-      <div
-        class="md:col-span-1 md:row-span-1 bg-[#159A9C] rounded-[40px] p-8 flex flex-col justify-center shadow-xl hover:-translate-y-2 transition-transform duration-300 text-white"
-      >
-        <h4 class="text-xl font-bold text-[#002333] mb-2">Żwir i Kruszywa</h4>
-        <p class="text-[#002333]/80 font-medium text-sm">
-          Różne frakcje, niezawodne pod podbudowy i systemy drenażowe.
-        </p>
       </div>
     </div>
   </section>
@@ -426,6 +428,12 @@ import Layout from "../layouts/Layout.astro";
         <a
           href="#piasek"
           class="mobile-link hover:text-[#159A9C] transition-colors">Piasek</a
+        >
+      </li>
+      <li class="py-4">
+        <a
+          href="/oferta"
+          class="mobile-link hover:text-[#159A9C] transition-colors">Oferta</a
         >
       </li>
       <li class="py-4">
