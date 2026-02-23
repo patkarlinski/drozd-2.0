@@ -1,0 +1,102 @@
+---
+import "../styles/global.css";
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Patryk Karlinski" />
+
+    <meta
+      name="keywords"
+      content="skup złomu, złom metalowy, skup metali kolorowych, piasek, żwir, kamienie budowlane, sprzedaż żwiru, piasek police, skup złomu police"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://drozdskup.pl/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://drozdskup.pl/" />
+    <meta property="og:image" content="https://drozdskup.pl/img/tlo3.webp" />
+
+    <link rel="icon" type="image/webp" href="/img/scrap.webp" />
+
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XC4C809WPQ"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XC4C809WPQ");
+      gtag("config", "AW-877625419");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "RecyclingCenter",
+        "name": "Drozd - Skup Złomu i Sprzedaż Kruszywa",
+        "image": "https://drozdskup.pl/img/tlo3.webp",
+        "@id": "https://drozdskup.pl",
+        "url": "https://drozdskup.pl",
+        "telephone": "+48502732306",
+        "email": "kontakt@drozdskup.pl",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Starzyńskiego 15",
+          "addressLocality": "Police",
+          "postalCode": "72-010",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "53.5487",
+          "longitude": "14.5695"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "15:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "13:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-white text-[#002333] font-sans antialiased">
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <slot />
+    </main>
+
+    <footer class="text-center py-12 mt-12 border-t border-gray-200">
+      <h2 class="text-2xl font-bold text-[#002333]">Drozd · Skup Złomu</h2>
+      <p class="text-gray-500 mt-2">
+        <small>© 2026 Drozd. All rights reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>
