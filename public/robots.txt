@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drozdskup.pl/sitemap.xml

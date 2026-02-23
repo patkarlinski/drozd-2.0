@@ -68,6 +68,7 @@ import Layout from "../layouts/Layout.astro";
       </button>
     </div>
   </nav>
+
   <header
     class="relative bg-[#002333] text-white rounded-[40px] overflow-hidden mb-16 shadow-2xl mt-4"
   >
@@ -101,7 +102,8 @@ import Layout from "../layouts/Layout.astro";
           >📞 Zadzwoń po wycenę</a
         >
         <a
-          href="#contact"
+          href="https://maps.app.goo.gl/EThrLSFi8AxaDJ3H6"
+          target="_blank"
           class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold text-lg transition-colors border border-white/20 text-center"
           >📍 Jak dojechać?</a
         >
@@ -126,7 +128,7 @@ import Layout from "../layouts/Layout.astro";
         class="md:col-span-2 md:row-span-2 rounded-[40px] overflow-hidden relative group shadow-2xl min-h-[350px] md:min-h-0"
       >
         <img
-          src="/img/tlo4.webp"
+          src="/img/tlo3.webp"
           alt="Skup złomu"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
@@ -223,12 +225,10 @@ import Layout from "../layouts/Layout.astro";
           alt="Piasek i Kruszywa"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-
         <div
           class="absolute inset-0 bg-gradient-to-t from-[#002333] via-[#002333]/80 to-black/20"
         >
         </div>
-
         <div class="absolute bottom-0 left-0 p-6 sm:p-8 md:p-10">
           <h3
             class="text-3xl sm:text-4xl font-black text-white drop-shadow-lg mb-3"
@@ -263,6 +263,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
+
   <section
     id="contact"
     class="py-16 md:py-24 max-w-5xl mx-auto w-full px-4 sm:px-6"
@@ -379,6 +380,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
+
   <div
     id="mobile-menu"
     class="fixed inset-0 bg-[#002333]/95 z-[100] hidden flex-col items-center justify-center backdrop-blur-md transition-opacity"
@@ -402,20 +404,21 @@ import Layout from "../layouts/Layout.astro";
           d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
-    <ul class="flex flex-col gap-10 text-center text-4xl font-bold text-white">
-      <li>
+
+    <ul class="flex flex-col gap-12 text-center text-5xl font-black text-white">
+      <li class="py-4">
         <a
           href="#zlom"
           class="mobile-link hover:text-[#159A9C] transition-colors">Złom</a
         >
       </li>
-      <li>
+      <li class="py-4">
         <a
           href="#piasek"
           class="mobile-link hover:text-[#159A9C] transition-colors">Piasek</a
         >
       </li>
-      <li>
+      <li class="py-4">
         <a
           href="#contact"
           class="mobile-link hover:text-[#159A9C] transition-colors">Kontakt</a
@@ -424,7 +427,7 @@ import Layout from "../layouts/Layout.astro";
     </ul>
     <a
       href="tel:502732306"
-      class="mt-16 bg-red-600 text-white px-12 py-4 rounded-full font-bold text-2xl shadow-lg hover:bg-red-700 transition-colors"
+      class="mt-20 bg-red-600 text-white px-16 py-5 rounded-full font-bold text-3xl shadow-lg hover:bg-red-700 transition-colors"
       >📞 Zadzwoń</a
     >
   </div>
