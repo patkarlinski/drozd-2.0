@@ -82,6 +82,7 @@ import Layout from "../layouts/Layout.astro";
         src="/img/tlo3.webp"
         alt="Tło złomowiska"
         class="w-full h-full object-cover"
+        fetchpriority="high"
       />
     </div>
 
@@ -121,9 +122,11 @@ import Layout from "../layouts/Layout.astro";
       class="relative rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl bg-[#002333]"
     >
       <img
-        src="/img/tlo3.webp"
+        src="/img/tlo4.webp"
         alt="Skup Złomu"
         class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay"
+        loading="lazy"
+        decoding="async"
       />
       <div
         class="absolute inset-0 bg-gradient-to-br from-[#002333] via-[#002333]/80 to-transparent"
@@ -202,6 +205,8 @@ import Layout from "../layouts/Layout.astro";
         src="/img/tlo2.webp"
         alt="Transport piasku i kruszywa"
         class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay"
+        loading="lazy"
+        decoding="async"
       />
       <div
         class="absolute inset-0 bg-gradient-to-bl from-[#002333] via-[#002333]/80 to-transparent"
