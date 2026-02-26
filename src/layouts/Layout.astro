@@ -25,22 +25,15 @@ const { title, description } = Astro.props;
     <meta property="og:description" content={description} />
     <meta property="og:url" content="https://drozdskup.pl/" />
     <meta property="og:image" content="https://drozdskup.pl/img/tlo3.webp" />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/tlo3.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
 
     <link rel="icon" type="image/webp" href="/img/scrap.webp" />
-
-    <script
-      is:inline
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XC4C809WPQ"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-XC4C809WPQ");
-      gtag("config", "AW-877625419");
-    </script>
 
     <script type="application/ld+json">
       {
@@ -145,6 +138,19 @@ const { title, description } = Astro.props;
           });
         }
       });
+    </script>
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XC4C809WPQ"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XC4C809WPQ");
+      gtag("config", "AW-877625419");
     </script>
   </body>
 </html>
