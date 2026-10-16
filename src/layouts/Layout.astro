@@ -169,10 +169,42 @@ const localBusinessLd = {
         const acceptBtn = document.getElementById("accept-cookies");
         const callFab = document.getElementById("call-fab");
 
+        // GA/Ads dopiero po zgodzie — nie blokują LCP/TBT w PageSpeed
+        let analyticsLoaded = false;
+        const loadAnalytics = () => {
+          if (analyticsLoaded) return;
+          analyticsLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          window.gtag = gtag;
+          const s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-XC4C809WPQ";
+          s.onload = () => {
+            gtag("js", new Date());
+            gtag("config", "G-XC4C809WPQ");
+            gtag("config", "AW-877625419");
+          };
+          document.head.appendChild(s);
+        };
+
+        const scheduleAnalytics = () => {
+          const run = () => loadAnalytics();
+          if ("requestIdleCallback" in window) {
+            requestIdleCallback(run, { timeout: 3000 });
+          } else {
+            window.setTimeout(run, 1500);
+          }
+        };
+
         if (!localStorage.getItem("cookiesAccepted")) {
           banner?.classList.remove("hidden");
           // Baner cookies zasłania FAB — chowamy go do akceptacji (bez zmiany layoutu strony)
           callFab?.classList.add("hidden");
+        } else {
+          scheduleAnalytics();
         }
 
         if (acceptBtn && banner) {
@@ -180,6 +212,7 @@ const localBusinessLd = {
             localStorage.setItem("cookiesAccepted", "true");
             banner.classList.add("hidden");
             callFab?.classList.remove("hidden");
+            scheduleAnalytics();
           });
         }
 
@@ -200,19 +233,6 @@ const localBusinessLd = {
           });
         }
       });
-    </script>
-    <script
-      is:inline
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XC4C809WPQ"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-XC4C809WPQ");
-      gtag("config", "AW-877625419");
     </script>
   </body>
 </html>
