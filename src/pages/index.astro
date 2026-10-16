@@ -1,10 +1,66 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Gdzie znajduje się skup złomu Drozd i w jakich godzinach pracujecie?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nasz plac mieści się przy ul. Starzyńskiego 15 w Policach (wygodny wjazd również dla aut dostawczych i z przyczepką). Pracujemy od poniedziałku do piątku w godz. 8:00–16:00 oraz w soboty od 8:00 do 13:00.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Czy przyjmujecie mniejsze ilości złomu od osób prywatnych?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Tak, obsługujemy zarówno firmy, jak i klientów indywidualnych. Możesz przywieźć do nas każdą ilość materiału — od drobnych metali kolorowych (miedź, mosiądz, puszki aluminiowe, akumulatory) po stare grzejniki, rury, piece czy blachę po remoncie.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Jak wygląda wycena i płatność za przywieziony złom?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Surowiec ważymy na miejscu na legalizowanej wadze i uczciwie klasyfikujemy według aktualnego cennika. Za przywieziony złom płacimy od ręki gotówką lub szybkim przelewem (w zależności od ustaleń i rodzaju podmiotu).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Jakie dokumenty są potrzebne, żeby sprzedać złom?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Osoby prywatne potrzebują jedynie dokumentu tożsamości (dowodu osobistego) do spisania standardowego formularza przyjęcia metali. W przypadku firm rozliczamy się na podstawie faktury VAT oraz wpisu do systemu BDO.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Od jakiej ilości możliwy jest odbiór złomu z posesji lub firmy?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Odbiór złomu z posesji, budowy lub zakładu organizujemy przy większych partiach materiału. Zadzwoń do nas pod numer 502 732 306 — ocenimy ilość surowca i sprawnie ustalimy możliwości oraz termin wywozu.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Jak wygląda transport zamówionego piasku i kruszyw?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Na placu sprzedajemy piasek (płukany, zasypowy, do piaskownic), żwir oraz kruszywa budowlane i drogowe. Jeśli potrzebujesz dostawy na budowę lub posesję, zapewniamy bezpośredni kontakt do sprawdzonych kierowców z wywrotkami, z którymi szybko ustalisz koszt i termin dowozu.",
+      },
+    },
+  ],
+};
 ---
 
 <Layout
-  title="Drozd Skup Złomu Police - Złom, Piasek, Kruszywa"
-  description="DROZD SKUP ZŁOMU I SPRZEDAŻ KRUSZYWA, KAMIENI, GRANITU POLICE. Najlepsze ceny, szybki transport na miejsce."
+  title="Skup złomu Police | Odbiór, złomowisko, piasek i kruszywa | Drozd"
+  description="Skup złomu w Policach: legalizowana waga, płatność od ręki, odbiór złomu. Sprzedaż piasku i kruszyw z transportem. ul. Starzyńskiego 15 — zapraszamy."
+  faqJsonLd={faqJsonLd}
 >
   <nav
     class="sticky top-4 bg-white rounded-full shadow-md z-50 py-3 px-5 sm:py-4 sm:px-8 flex justify-between items-center mb-8"
@@ -16,14 +72,14 @@ import Layout from "../layouts/Layout.astro";
         class="w-14 h-14 sm:w-16 sm:h-16 object-contain"
       />
       <span
-        class="text-2xl sm:text-4xl lg:text-4xl font-black text-[#002333] whitespace-nowrap tracking-tight leading-none"
+        class="text-xl sm:text-3xl lg:text-3xl font-black text-[#002333] whitespace-nowrap tracking-tight leading-none"
       >
         Drozd <span class="text-[#159A9C]">| Skup Złomu</span>
       </span>
     </a>
 
     <ul
-      class="hidden lg:flex gap-8 xl:gap-12 text-xl xl:text-2xl font-bold text-[#002333]"
+      class="hidden lg:flex gap-8 xl:gap-10 text-lg xl:text-xl font-bold text-[#002333]"
     >
       <li>
         <a href="#zlom" class="hover:text-[#159A9C] transition-colors">Złom</a>
@@ -39,6 +95,9 @@ import Layout from "../layouts/Layout.astro";
         >
       </li>
       <li>
+        <a href="#faq" class="hover:text-[#159A9C] transition-colors">FAQ</a>
+      </li>
+      <li>
         <a href="#contact" class="hover:text-[#159A9C] transition-colors"
           >Kontakt</a
         >
@@ -47,10 +106,26 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="flex items-center gap-4 shrink-0">
       <a
-        href="tel:502732306"
-        class="hidden lg:block bg-red-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-700 transition-transform hover:scale-105 shadow-md whitespace-nowrap"
-        >Zadzwoń</a
+        href="tel:+48502732306"
+        class="hidden lg:inline-flex items-center gap-2 bg-[#1AA3A5] text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-[#2BB8BA] hover:shadow-lg hover:shadow-[#1AA3A5]/35 transition-all shadow-md whitespace-nowrap"
       >
+        <svg
+          class="w-5 h-5 shrink-0"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          ></path>
+        </svg>
+        Zadzwoń
+      </a>
 
       <button
         id="mobile-menu-btn"
@@ -75,98 +150,188 @@ import Layout from "../layouts/Layout.astro";
   </nav>
 
   <header
-    class="relative bg-[#002333] text-white rounded-[40px] overflow-hidden mb-10 shadow-2xl mt-4"
+    class="relative bg-[#002333] text-white rounded-3xl md:rounded-[2.5rem] overflow-hidden mb-8 shadow-2xl mt-4"
   >
-    <div class="absolute inset-0 opacity-40 mix-blend-overlay">
+    <div class="absolute inset-0">
       <img
         src="/img/tlo3.webp"
-        alt="Tło złomowiska"
-        class="w-full h-full object-cover"
+        alt="Złomowisko Drozd w Policach"
+        class="w-full h-full object-cover opacity-40"
         fetchpriority="high"
       />
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-[#002333] via-[#002333]/92 to-[#002333]/65"
+      >
+      </div>
     </div>
 
     <div
-      class="relative z-10 p-10 md:p-20 lg:p-24 text-center md:text-left flex flex-col md:w-2/3"
+      class="relative z-10 p-8 md:p-16 lg:p-20 text-center md:text-left flex flex-col md:w-2/3"
     >
       <h1
-        class="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight"
+        class="text-4xl md:text-5xl lg:text-6xl font-black mb-5 leading-tight tracking-tight"
       >
-        Twój zaufany <span class="text-[#159A9C]">skup złomu</span> w Policach
+        Skup złomu <span class="text-[#159A9C]">Police</span>
       </h1>
-      <p class="text-xl mb-10 text-gray-300 font-light max-w-2xl">
-        Najlepsze ceny, uczciwa waga i błyskawiczny transport. Pozbądź się
-        zalegającego metalu lub zamów najwyższej jakości kruszywa prosto na
-        budowę.
+      <p
+        class="text-base md:text-lg lg:text-xl mb-8 text-white/95 font-normal max-w-2xl leading-relaxed"
+      >
+        Złomowisko przy <strong class="font-semibold text-white">ul.&nbsp;Starzyńskiego&nbsp;15</strong>.
+        Skup i&nbsp;odbiór złomu, legalizowana waga oraz <strong class="font-semibold text-white">płatność od&nbsp;ręki</strong>.
+        Sprzedajemy też piasek i&nbsp;kruszywa w&nbsp;Policach i&nbsp;okolicach Szczecina.
       </p>
       <div
         class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
       >
         <a
           href="tel:502732306"
-          class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-transform duration-300 hover:scale-105 shadow-lg shadow-red-600/30 text-center"
-          >📞 Zadzwoń po wycenę</a
+          class="bg-[#1AA3A5] hover:bg-[#2BB8BA] hover:shadow-xl hover:shadow-[#1AA3A5]/40 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-[#1AA3A5]/25 text-center"
+          >Zadzwoń: 502 732 306</a
         >
         <a
           href="https://maps.app.goo.gl/BZ1tgPHYC2gcyn8u6"
           target="_blank"
+          rel="noopener noreferrer"
           class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold text-lg transition-colors border border-white/20 text-center"
-          >📍 Jak dojechać?</a
+          >Jak dojechać</a
         >
       </div>
     </div>
   </header>
 
-  <section id="zlom" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+  <div
+    class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-10 text-center"
+  >
     <div
-      class="relative rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl bg-[#002333]"
+      class="rounded-2xl border border-slate-200 bg-white px-3 py-4 shadow-sm flex items-center justify-center gap-2"
+    >
+      <svg
+        class="w-5 h-5 text-teal-600 shrink-0"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.75"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v3m0 0a3 3 0 013 3v1H9V9a3 3 0 013-3zm-7 8h14M5 14l2 7h10l2-7M12 6V3"
+        ></path>
+      </svg>
+      <p class="text-sm font-semibold text-[#002333]">Legalna waga</p>
+    </div>
+    <div
+      class="rounded-2xl border border-slate-200 bg-white px-3 py-4 shadow-sm flex items-center justify-center gap-2"
+    >
+      <svg
+        class="w-5 h-5 text-teal-600 shrink-0"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.75"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+        ></path>
+      </svg>
+      <p class="text-sm font-semibold text-[#002333]">Płatność od ręki</p>
+    </div>
+    <div
+      class="rounded-2xl border border-slate-200 bg-white px-3 py-4 shadow-sm flex items-center justify-center gap-2"
+    >
+      <svg
+        class="w-5 h-5 text-teal-600 shrink-0"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.75"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+        ></path>
+      </svg>
+      <p class="text-sm font-semibold text-[#002333]">Odbiór złomu</p>
+    </div>
+    <div
+      class="rounded-2xl border border-slate-200 bg-white px-3 py-4 shadow-sm flex items-center justify-center gap-2"
+    >
+      <svg
+        class="w-5 h-5 text-teal-600 shrink-0"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.75"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8 17a2 2 0 104 0m-4 0a2 2 0 114 0m-4 0H5a2 2 0 01-2-2V9a2 2 0 012-2h9v10m3-10h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-1m0 0a2 2 0 104 0m-4 0a2 2 0 114 0"
+        ></path>
+      </svg>
+      <p class="text-sm font-semibold text-[#002333]">Transport kruszyw</p>
+    </div>
+  </div>
+
+  <section id="zlom" class="py-8 md:py-14 max-w-7xl mx-auto px-4 sm:px-6">
+    <div
+      class="relative rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl bg-[#002333]"
     >
       <img
         src="/img/tlo4.webp"
-        alt="Skup Złomu"
-        class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay"
+        alt="Skup złomu i metali kolorowych w Policach"
+        class="absolute inset-0 w-full h-full object-cover opacity-40"
         loading="lazy"
         decoding="async"
       />
       <div
-        class="absolute inset-0 bg-gradient-to-br from-[#002333] via-[#002333]/80 to-transparent"
+        class="absolute inset-0 bg-gradient-to-br from-[#002333] via-[#002333]/90 to-[#002333]/60"
       >
       </div>
 
       <div
-        class="relative z-10 p-8 md:p-16 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+        class="relative z-10 p-8 md:p-14 lg:p-16 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
       >
         <div class="text-center lg:text-left">
           <h2
-            class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight"
+            class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-5 leading-tight tracking-tight"
           >
-            Skup<br /><span class="text-[#159A9C]">Złomu</span>
+            Złom<br /><span class="text-[#159A9C]">w Policach</span>
           </h2>
           <p
-            class="text-xl md:text-2xl text-gray-300 font-light mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+            class="text-base md:text-lg text-white/95 font-normal mb-6 max-w-md mx-auto lg:mx-0 leading-relaxed"
           >
-            Najlepsze ceny w regionie. Posiadamy legalizowaną wagę, płacimy od
-            ręki i gwarantujemy uczciwą klasyfikację surowca.
+            Skupujemy złom stalowy i&nbsp;metale kolorowe. Na placu czeka
+            <strong class="font-semibold text-white">legalizowana waga</strong>,
+            uczciwa klasyfikacja i&nbsp;<strong class="font-semibold text-white">gotówka od&nbsp;ręki</strong>.
+            Przy większych ilościach zapewniamy odbiór złomu.
           </p>
           <a
-            href="/oferta"
-            class="inline-block bg-[#0E7A7C] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[#002333] transition-colors shadow-lg"
+            href="/oferta#zlom"
+            class="inline-block bg-[#1AA3A5] hover:bg-[#2BB8BA] hover:shadow-xl hover:shadow-[#1AA3A5]/40 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-[#1AA3A5]/25"
           >
-            📄 Zobacz pełną ofertę
+            Pełna oferta złomu
           </a>
         </div>
 
-        <div class="flex flex-col gap-6 text-center lg:text-left">
+        <div class="flex flex-col gap-5 text-center lg:text-left">
           <div
-            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
+            class="bg-[#0a1922]/80 backdrop-blur-md rounded-2xl p-7 md:p-8 border border-white/10"
           >
-            <h3
-              class="text-2xl font-bold text-white mb-4 flex items-center justify-center lg:justify-start gap-3"
-            >
-              <span class="text-3xl">⚙️</span> Złom stalowy
-            </h3>
+            <h3 class="text-lg font-bold text-white mb-3">Złom stalowy</h3>
             <ul
-              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+              class="list-disc list-inside text-slate-100 text-base leading-relaxed space-y-1.5 marker:text-[#1AA3A5]"
             >
               <li>Złom ciężki i lekki</li>
               <li>Blachy i żeliwo</li>
@@ -176,15 +341,11 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <div
-            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
+            class="bg-[#0a1922]/80 backdrop-blur-md rounded-2xl p-7 md:p-8 border border-white/10"
           >
-            <h3
-              class="text-2xl font-bold text-white mb-4 flex items-center justify-center lg:justify-start gap-3"
-            >
-              <span class="text-3xl">🔋</span> Metale kolorowe
-            </h3>
+            <h3 class="text-lg font-bold text-white mb-3">Metale kolorowe</h3>
             <ul
-              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+              class="list-disc list-inside text-slate-100 text-base leading-relaxed space-y-1.5 marker:text-[#1AA3A5]"
             >
               <li>Miedź, mosiądz, brąz</li>
               <li>Aluminium i puszki po napojach</li>
@@ -197,62 +358,60 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="piasek" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+  <section id="piasek" class="py-8 md:py-14 max-w-7xl mx-auto px-4 sm:px-6">
     <div
-      class="relative rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl bg-[#002333]"
+      class="relative rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl bg-[#0a3d42]"
     >
       <img
         src="/img/tlo2.webp"
-        alt="Transport piasku i kruszywa"
-        class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay"
+        alt="Piasek i kruszywa Police"
+        class="absolute inset-0 w-full h-full object-cover opacity-35"
         loading="lazy"
         decoding="async"
       />
       <div
-        class="absolute inset-0 bg-gradient-to-bl from-[#002333] via-[#002333]/80 to-transparent"
+        class="absolute inset-0 bg-gradient-to-bl from-[#0a3d42] via-[#0a3d42]/90 to-[#002333]/55"
       >
       </div>
 
       <div
-        class="relative z-10 p-8 md:p-16 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+        class="relative z-10 p-8 md:p-14 lg:p-16 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
       >
         <div class="order-1 lg:order-2 text-center lg:text-right">
           <h2
-            class="text-6xl md:text-8xl font-black text-white mb-6 leading-tight tracking-tight"
+            class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight tracking-tight"
           >
-            Piaski<br /><span
-              class="text-[#159A9C] text-4xl md:text-5xl uppercase tracking-wider font-bold italic opacity-90 block mt-2"
-              >Szybki transport</span
-            >
+            Piasek<br /><span class="text-[#159A9C]">i kruszywa</span>
           </h2>
           <p
-            class="text-xl md:text-2xl text-gray-300 font-light mb-10 max-w-lg mx-auto lg:ml-auto lg:mr-0 leading-relaxed"
+            class="text-[#2BB8BA] text-lg md:text-xl font-semibold mb-5 tracking-wide"
           >
-            Zapewniamy profesjonalny dowóz kruszyw własnymi wywrotkami.
-            Obsługujemy duże place budowy oraz prywatne posesje.
+            Szybki transport z Polic
+          </p>
+          <p
+            class="text-base md:text-lg text-white/95 font-normal mb-8 max-w-md mx-auto lg:ml-auto lg:mr-0 leading-relaxed"
+          >
+            Sprzedajemy piasek, żwir i&nbsp;kruszywa budowlane dla budów oraz
+            prywatnych posesji. Zapewniamy <strong class="font-semibold text-white">kontakt do sprawdzonych kierowców</strong> z&nbsp;wywrotkami
+            (Police i&nbsp;okolice).
           </p>
           <a
-            href="/oferta"
-            class="inline-block bg-[#0E7A7C] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[#002333] transition-colors shadow-lg"
+            href="/oferta#piasek"
+            class="inline-block bg-[#1AA3A5] hover:bg-[#2BB8BA] hover:shadow-xl hover:shadow-[#1AA3A5]/40 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-[#1AA3A5]/25"
           >
-            📄 Pełna oferta
+            Pełna oferta kruszyw
           </a>
         </div>
 
         <div
-          class="flex flex-col gap-6 order-2 lg:order-1 text-center lg:text-left"
+          class="flex flex-col gap-5 order-2 lg:order-1 text-center lg:text-left"
         >
           <div
-            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
+            class="bg-[#0a1922]/80 backdrop-blur-md rounded-2xl p-7 md:p-8 border border-white/10"
           >
-            <h3
-              class="text-2xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3"
-            >
-              <span class="text-4xl">🏖️</span>
-              <span>Różne rodzaje piasku</span>
-            </h3>
+            <h3 class="text-lg font-bold text-white mb-3">Rodzaje piasku</h3>
             <ul
-              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+              class="list-disc list-inside text-slate-100 text-base leading-relaxed space-y-1.5 marker:text-[#1AA3A5]"
             >
               <li>Piasek płukany (0-2 mm)</li>
               <li>Piasek do wylewek i murowania</li>
@@ -262,15 +421,11 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <div
-            class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:bg-white/20 transition-colors"
+            class="bg-[#0a1922]/80 backdrop-blur-md rounded-2xl p-7 md:p-8 border border-white/10"
           >
-            <h3
-              class="text-2xl font-bold text-white mb-4 flex items-center justify-center lg:justify-start gap-3"
-            >
-              <span class="text-3xl">🪨</span> Żwiry i Kruszywa
-            </h3>
+            <h3 class="text-lg font-bold text-white mb-3">Żwiry i kruszywa</h3>
             <ul
-              class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-2 marker:text-[#159A9C]"
+              class="list-disc list-inside text-slate-100 text-base leading-relaxed space-y-1.5 marker:text-[#1AA3A5]"
             >
               <li>Żwiry płukane (2-8, 8-16, 16-32 mm)</li>
               <li>Kruszywa łamane</li>
@@ -284,22 +439,159 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <section
+    id="faq"
+    class="py-8 md:py-12 max-w-3xl mx-auto w-full px-4 sm:px-6"
+  >
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-black text-[#002333]">
+        Najczęstsze pytania
+      </h2>
+      <p class="text-base md:text-lg text-[#002333]/70 mt-3">
+        Krótko o skupie złomu, odbiorze i piasku w Policach.
+      </p>
+    </div>
+    <div class="space-y-4">
+      <details
+        class="group rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 open:bg-white open:shadow-sm"
+      >
+        <summary
+          class="cursor-pointer font-bold text-[#002333] text-lg list-none flex justify-between items-center gap-3 [&::-webkit-details-marker]:hidden"
+        >
+          Gdzie znajduje się skup złomu Drozd i w jakich godzinach pracujecie?
+          <span class="text-[#159A9C] text-xl group-open:rotate-45 transition-transform"
+            >+</span
+          >
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Nasz plac mieści się przy{" "}
+          <a
+            href="https://maps.app.goo.gl/BZ1tgPHYC2gcyn8u6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-semibold text-[#002333] underline underline-offset-2 decoration-teal-600/50 hover:text-teal-700 transition-colors"
+            >ul. Starzyńskiego 15 w Policach</a
+          >{" "}
+          (wygodny wjazd również dla aut dostawczych i z przyczepką). Pracujemy
+          od poniedziałku do piątku w godz. 8:00–16:00 oraz w soboty od 8:00 do
+          13:00.
+        </p>
+      </details>
+      <details
+        class="group rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 open:bg-white open:shadow-sm"
+      >
+        <summary
+          class="cursor-pointer font-bold text-[#002333] text-lg list-none flex justify-between items-center gap-3 [&::-webkit-details-marker]:hidden"
+        >
+          Czy przyjmujecie mniejsze ilości złomu od osób prywatnych?
+          <span class="text-[#159A9C] text-xl group-open:rotate-45 transition-transform"
+            >+</span
+          >
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Tak, obsługujemy zarówno firmy, jak i klientów indywidualnych. Możesz
+          przywieźć do nas każdą ilość materiału — od drobnych metali kolorowych
+          (miedź, mosiądz, puszki aluminiowe, akumulatory) po stare grzejniki,
+          rury, piece czy blachę po remoncie.
+        </p>
+      </details>
+      <details
+        class="group rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 open:bg-white open:shadow-sm"
+      >
+        <summary
+          class="cursor-pointer font-bold text-[#002333] text-lg list-none flex justify-between items-center gap-3 [&::-webkit-details-marker]:hidden"
+        >
+          Jak wygląda wycena i płatność za przywieziony złom?
+          <span class="text-[#159A9C] text-xl group-open:rotate-45 transition-transform"
+            >+</span
+          >
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Surowiec ważymy na miejscu na legalizowanej wadze i uczciwie
+          klasyfikujemy według aktualnego cennika. Za przywieziony złom płacimy
+          od ręki gotówką lub szybkim przelewem (w zależności od ustaleń i
+          rodzaju podmiotu).
+        </p>
+      </details>
+      <details
+        class="group rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 open:bg-white open:shadow-sm"
+      >
+        <summary
+          class="cursor-pointer font-bold text-[#002333] text-lg list-none flex justify-between items-center gap-3 [&::-webkit-details-marker]:hidden"
+        >
+          Jakie dokumenty są potrzebne, żeby sprzedać złom?
+          <span class="text-[#159A9C] text-xl group-open:rotate-45 transition-transform"
+            >+</span
+          >
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Osoby prywatne potrzebują jedynie dokumentu tożsamości (dowodu
+          osobistego) do spisania standardowego formularza przyjęcia metali. W
+          przypadku firm rozliczamy się na podstawie faktury VAT oraz wpisu do
+          systemu BDO.
+        </p>
+      </details>
+      <details
+        class="group rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 open:bg-white open:shadow-sm"
+      >
+        <summary
+          class="cursor-pointer font-bold text-[#002333] text-lg list-none flex justify-between items-center gap-3 [&::-webkit-details-marker]:hidden"
+        >
+          Od jakiej ilości możliwy jest odbiór złomu z posesji lub firmy?
+          <span class="text-[#159A9C] text-xl group-open:rotate-45 transition-transform"
+            >+</span
+          >
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Odbiór złomu z posesji, budowy lub zakładu organizujemy przy większych
+          partiach materiału. Zadzwoń do nas pod numer{" "}
+          <a
+            href="tel:+48502732306"
+            class="font-bold text-[#002333] hover:text-teal-700 underline underline-offset-2 decoration-teal-600/50 transition-colors"
+            >502 732 306</a
+          >{" "}
+          — ocenimy ilość surowca i sprawnie ustalimy możliwości oraz termin
+          wywozu.
+        </p>
+      </details>
+      <details
+        class="group rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 open:bg-white open:shadow-sm"
+      >
+        <summary
+          class="cursor-pointer font-bold text-[#002333] text-lg list-none flex justify-between items-center gap-3 [&::-webkit-details-marker]:hidden"
+        >
+          Jak wygląda transport zamówionego piasku i kruszyw?
+          <span class="text-[#159A9C] text-xl group-open:rotate-45 transition-transform"
+            >+</span
+          >
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Na placu sprzedajemy piasek (płukany, zasypowy, do piaskownic), żwir
+          oraz kruszywa budowlane i drogowe. Jeśli potrzebujesz dostawy na
+          budowę lub posesję, zapewniamy bezpośredni kontakt do sprawdzonych
+          kierowców z wywrotkami, z którymi szybko ustalisz koszt i termin
+          dowozu.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <section
     id="contact"
-    class="py-10 md:py-16 max-w-5xl mx-auto w-full px-4 sm:px-6 mb-10"
+    class="py-8 md:py-14 max-w-5xl mx-auto w-full px-4 sm:px-6 mb-10"
   >
     <div class="text-center mb-8 md:mb-10">
-      <h2 class="text-4xl md:text-5xl font-black text-[#002333]">
-        Kontakt i Dojazd
+      <h2 class="text-3xl md:text-4xl font-black text-[#002333]">
+        Kontakt i dojazd
       </h2>
       <p
-        class="text-lg md:text-xl font-medium text-[#002333]/70 mt-3 max-w-2xl mx-auto"
+        class="text-lg font-medium text-[#002333]/70 mt-3 max-w-2xl mx-auto"
       >
-        Masz pytania? Zadzwoń lub odwiedź nasz plac.
+        Zadzwoń lub odwiedź nasz plac w Policach — skup złomu i sprzedaż piasku.
       </p>
     </div>
 
     <div
-      class="bg-[#002333] text-white rounded-[40px] p-8 md:p-12 lg:p-16 shadow-2xl relative overflow-hidden w-full"
+      class="bg-[#002333] text-white rounded-3xl md:rounded-[2.5rem] p-8 md:p-12 lg:p-14 shadow-2xl relative overflow-hidden w-full"
     >
       <div
         class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 text-center relative z-10 mb-12"
@@ -311,7 +603,7 @@ import Layout from "../layouts/Layout.astro";
             Godziny otwarcia
           </h3>
           <p class="text-xl md:text-2xl font-bold text-[#159A9C]">
-            Pon-pt: 8:00 - 15:00
+            Pon-pt: 8:00 - 16:00
           </p>
           <p class="text-xl md:text-2xl font-bold text-[#159A9C]">
             Sobota: 8:00 - 13:00
@@ -327,8 +619,8 @@ import Layout from "../layouts/Layout.astro";
           </h3>
           <a
             href="tel:502732306"
-            class="text-3xl font-black text-red-500 hover:text-red-400 block"
-            >502-732-306</a
+            class="text-2xl md:text-3xl font-bold text-white hover:text-teal-300 block transition-colors"
+            >502 732 306</a
           >
         </div>
         <div class="flex flex-col items-center justify-start">
@@ -339,7 +631,7 @@ import Layout from "../layouts/Layout.astro";
           </h3>
           <a
             href="mailto:kontakt@drozdskup.pl"
-            class="text-xl md:text-2xl font-bold text-[#159A9C]"
+            class="text-xl md:text-2xl font-bold text-[#159A9C] hover:text-teal-300 transition-colors"
             >kontakt@drozdskup.pl</a
           >
         </div>
@@ -394,15 +686,29 @@ import Layout from "../layouts/Layout.astro";
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Mapa dojazdu do Drozd Skup Złomu Police"
-          width="100%"
-          height="100%"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa dojazdu do Drozd Skup Złomu Police"
         >
         </iframe>
+      </div>
+
+      <div class="relative z-10 mt-6 text-center">
+        <a
+          href="https://maps.app.goo.gl/BZ1tgPHYC2gcyn8u6"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 bg-[#1AA3A5] hover:bg-[#2BB8BA] text-white font-bold text-base md:text-lg px-8 py-4 rounded-full transition-all shadow-lg shadow-[#1AA3A5]/25"
+        >
+          Otwórz w Mapach
+        </a>
+        <p class="mt-4 text-slate-200 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          Plac przy ul. Starzyńskiego 15, 72-010 Police. Wjazd od strony ul.
+          Starzyńskiego — szukaj oznaczenia Drozd Skup Złomu. W razie problemów z
+          dojazdem zadzwoń:
+          <a
+            href="tel:502732306"
+            class="text-white font-semibold hover:text-teal-300 underline-offset-2 hover:underline"
+            >502 732 306</a
+          >.
+        </p>
       </div>
     </div>
   </section>
@@ -452,6 +758,12 @@ import Layout from "../layouts/Layout.astro";
       </li>
       <li class="py-4">
         <a
+          href="#faq"
+          class="mobile-link hover:text-[#159A9C] transition-colors">FAQ</a
+        >
+      </li>
+      <li class="py-4">
+        <a
           href="#contact"
           class="mobile-link hover:text-[#159A9C] transition-colors">Kontakt</a
         >
@@ -459,8 +771,8 @@ import Layout from "../layouts/Layout.astro";
     </ul>
     <a
       href="tel:502732306"
-      class="mt-20 bg-red-600 text-white px-16 py-5 rounded-full font-bold text-3xl shadow-lg hover:bg-red-700 transition-colors"
-      >📞 Zadzwoń</a
+      class="mt-20 bg-[#1AA3A5] text-white px-16 py-5 rounded-full font-bold text-3xl shadow-lg hover:bg-[#2BB8BA] hover:shadow-xl hover:shadow-[#1AA3A5]/40 transition-all"
+      >Zadzwoń</a
     >
   </div>
 

@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* Offset dla sticky nav przy smooth scroll do #kotwic */
+[id="zlom"],
+[id="piasek"],
+[id="faq"],
+[id="contact"] {
+  scroll-margin-top: 6rem;
+}

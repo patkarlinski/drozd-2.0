@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
-  title="Oferta - Drozd Skup Złomu i Sprzedaż Kruszywa"
-  description="Poznaj szczegóły naszej oferty. Skup złomu stalowego, metali kolorowych oraz sprzedaż i transport kruszywa, piasku i żwiru."
+  title="Oferta złomu, piasku i kruszyw | Odbiór złomu Police | Drozd"
+  description="Szczegółowa oferta: skup złomu stalowego i metali kolorowych, odbiór złomu, sprzedaż piasku i kruszyw z transportem w Policach."
 >
   <nav
     class="sticky top-4 bg-white rounded-full shadow-md z-50 py-3 px-5 sm:py-4 sm:px-8 flex justify-between items-center mb-10 max-w-6xl mx-auto"
@@ -16,14 +16,14 @@ import Layout from "../layouts/Layout.astro";
         class="w-14 h-14 sm:w-16 sm:h-16 object-contain"
       />
       <span
-        class="text-2xl sm:text-4xl lg:text-4xl font-black text-[#002333] whitespace-nowrap tracking-tight leading-none"
+        class="text-xl sm:text-3xl lg:text-3xl font-black text-[#002333] whitespace-nowrap tracking-tight leading-none"
       >
         Drozd <span class="text-[#159A9C]">| Skup Złomu</span>
       </span>
     </a>
 
     <ul
-      class="hidden lg:flex gap-8 xl:gap-12 text-xl xl:text-2xl font-bold text-[#002333]"
+      class="hidden lg:flex gap-8 xl:gap-10 text-lg xl:text-xl font-bold text-[#002333]"
     >
       <li>
         <a href="/#zlom" class="hover:text-[#159A9C] transition-colors">Złom</a>
@@ -35,6 +35,9 @@ import Layout from "../layouts/Layout.astro";
       </li>
       <li><a href="/oferta" class="text-[#159A9C]">Oferta</a></li>
       <li>
+        <a href="/#faq" class="hover:text-[#159A9C] transition-colors">FAQ</a>
+      </li>
+      <li>
         <a href="/#contact" class="hover:text-[#159A9C] transition-colors"
           >Kontakt</a
         >
@@ -43,10 +46,26 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="flex items-center gap-4 shrink-0">
       <a
-        href="tel:502732306"
-        class="hidden lg:block bg-red-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-700 transition-transform hover:scale-105 shadow-md"
-        >Zadzwoń</a
+        href="tel:+48502732306"
+        class="hidden lg:inline-flex items-center gap-2 bg-[#1AA3A5] text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-[#2BB8BA] hover:shadow-lg hover:shadow-[#1AA3A5]/35 transition-all shadow-md whitespace-nowrap"
       >
+        <svg
+          class="w-5 h-5 shrink-0"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          ></path>
+        </svg>
+        Zadzwoń
+      </a>
 
       <button
         id="mobile-menu-btn"
@@ -71,36 +90,38 @@ import Layout from "../layouts/Layout.astro";
   </nav>
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6">
-    <header class="text-center mb-16">
-      <h1 class="text-5xl md:text-6xl font-black text-[#002333] mb-4">
-        Nasza <span class="text-[#159A9C]">Oferta</span>
+    <header class="text-center mb-12 md:mb-14">
+      <h1 class="text-4xl md:text-5xl font-black text-[#002333] mb-4">
+        Oferta <span class="text-[#159A9C]">złomu i piasku</span>
       </h1>
-      <p class="text-xl text-gray-600 font-medium">
-        Poznaj szczegóły naszych usług i sprawdź, co możemy dla Ciebie zrobić.
+      <p class="text-lg md:text-xl text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed">
+        Skup złomu i złomowisko w Policach, odbiór materiału oraz sprzedaż
+        piasku i kruszyw z transportem.
       </p>
     </header>
 
     <section
-      class="bg-white rounded-[40px] shadow-xl p-8 md:p-12 mb-12 border border-gray-100 relative overflow-hidden"
+      id="zlom"
+      class="bg-white rounded-3xl md:rounded-[2.5rem] shadow-xl p-8 md:p-12 mb-10 border border-gray-100 relative overflow-hidden"
     >
       <div
         class="absolute top-0 right-0 w-32 h-32 bg-[#159A9C] rounded-bl-full opacity-10"
       >
       </div>
-      <h2
-        class="text-3xl font-black text-[#002333] mb-6 flex items-center gap-3"
-      >
-        <span class="text-4xl">♻️</span> Skup Złomu i Metali Kolorowych
+      <h2 class="text-2xl md:text-3xl font-black text-[#002333] mb-4">
+        Skup złomu i metali kolorowych
       </h2>
-      <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-        Specjalizujemy się w profesjonalnym i szybkim skupie każdego rodzaju
-        złomu. Oferujemy uczciwą klasyfikację materiału na legalizowanej wadze
-        oraz natychmiastową płatność (gotówka lub przelew).
+      <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+        Przyjmujemy złom stalowy i metale kolorowe na naszym placu w Policach.
+        Klasyfikacja na legalizowanej wadze, płatność gotówką lub przelewem —
+        od razu po zważeniu.
       </p>
       <div class="grid md:grid-cols-2 gap-8">
         <div>
-          <h3 class="text-xl font-bold text-[#159A9C] mb-3">Złom Stalowy:</h3>
-          <ul class="space-y-2 text-gray-700 font-medium list-disc list-inside">
+          <h3 class="text-xl font-bold text-[#159A9C] mb-3">Złom stalowy</h3>
+          <ul
+            class="space-y-2 text-slate-700 font-medium list-disc list-inside marker:text-teal-600"
+          >
             <li>Złom gruby (wsadowy)</li>
             <li>Złom lekki (blachy, wióry)</li>
             <li>Żeliwo maszynowe i handlowe</li>
@@ -109,9 +130,11 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <div>
           <h3 class="text-xl font-bold text-[#159A9C] mb-3">
-            Metale Kolorowe:
+            Metale kolorowe
           </h3>
-          <ul class="space-y-2 text-gray-700 font-medium list-disc list-inside">
+          <ul
+            class="space-y-2 text-slate-700 font-medium list-disc list-inside marker:text-teal-600"
+          >
             <li>Miedź (Milenbera, kawałkowa, nawojowa)</li>
             <li>Aluminium (felgi, puszki, profile, odlewy)</li>
             <li>Mosiądz i brąz</li>
@@ -123,56 +146,86 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <section
-      class="bg-[#002333] text-white rounded-[40px] shadow-xl p-8 md:p-12 mb-16 relative overflow-hidden"
+      class="bg-gray-50 rounded-3xl md:rounded-[2.5rem] shadow-lg p-8 md:p-12 mb-10 border border-gray-200 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+    >
+      <div class="max-w-xl">
+        <h2 class="text-2xl md:text-3xl font-black text-[#002333] mb-4">
+          Odbiór złomu i wywóz
+        </h2>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Potrzebujesz odbioru złomu z posesji lub budowy? Organizujemy wywóz
+          większych partii — w Policach oraz w okolicach Szczecina. Zakres
+          usługi i termin ustalamy telefonicznie.
+        </p>
+      </div>
+      <div class="shrink-0 flex items-center justify-center md:justify-end">
+        <a
+          href="tel:+48502732306"
+          class="inline-block bg-[#1AA3A5] text-white px-8 py-3 rounded-full font-bold hover:bg-[#2BB8BA] hover:shadow-lg hover:shadow-[#1AA3A5]/35 transition-all text-center"
+          >Zadzwoń w sprawie odbioru</a
+        >
+      </div>
+    </section>
+
+    <section
+      id="piasek"
+      class="bg-[#002333] text-white rounded-3xl md:rounded-[2.5rem] shadow-xl p-8 md:p-12 mb-12 relative overflow-hidden"
     >
       <div
         class="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-tl-full opacity-5"
       >
       </div>
-      <h2 class="text-3xl font-black mb-6 flex items-center gap-3">
-        <span class="text-4xl">🚧</span> Sprzedaż Piasku i Kruszyw
+      <h2 class="text-2xl md:text-3xl font-black mb-4">
+        Piasek i kruszywa Police
       </h2>
-      <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-        Dostarczamy najwyższej jakości kruszywa budowlane i drogowe z
-        bezpośrednim, szybkim transportem na miejsce Twojej inwestycji.
-        Posiadamy wywrotki, które dowiozą materiał tam, gdzie go potrzebujesz.
+      <p class="text-lg text-slate-200 mb-6 leading-relaxed">
+        Sprzedajemy piasek i kruszywa budowlane. Zapewniamy kontakt do
+        sprawdzonych kierowców z wywrotkami realizujących szybki dowóz na budowy
+        i prywatne posesje w Policach i okolicach.
       </p>
       <div class="grid md:grid-cols-2 gap-8">
         <div>
           <h3 class="text-xl font-bold text-[#159A9C] mb-3">
-            Kruszywa i Piasek:
+            Asortyment
           </h3>
-          <ul class="space-y-2 text-gray-300 font-medium list-disc list-inside">
-            <li>Piasek płukany (0-2 mm) - do wylewek i murowania</li>
-            <li>Piasek zasypowy (na fundamenty i zasypki)</li>
-            <li>Żwir i otoczaki (różne frakcje np. 2-8, 8-16)</li>
+          <ul class="space-y-2 text-slate-100 font-medium list-disc list-inside marker:text-[#1AA3A5]">
+            <li>Piasek płukany (0-2 mm) — do wylewek i murowania</li>
+            <li>Piasek zasypowy (fundamenty i zasypki)</li>
+            <li>Żwir i otoczaki (m.in. 2-8, 8-16 mm)</li>
             <li>Kruszywa łamane, granit, tłuczeń</li>
             <li>Mieszanki podbudowowe i drenażowe</li>
           </ul>
         </div>
-        <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <div
+          class="bg-[#0a1922]/80 p-6 rounded-2xl border border-white/20 flex flex-col"
+        >
           <h3 class="text-xl font-bold text-white mb-2">
-            🚚 Transport pod wskazany adres
+            Transport pod adres
           </h3>
-          <p class="text-sm text-gray-300">
-            Koszt transportu wyceniamy indywidualnie w zależności od ilości
-            zamawianego materiału oraz odległości od naszego placu w Policach.
-            Zadzwoń, a zrobimy to od ręki!
+          <p class="text-sm text-slate-200 leading-relaxed mb-5">
+            Połączenie ze sprawdzonymi kierowcami z wywrotkami — koszt i termin
+            dowozu ustalasz bezpośrednio z przewoźnikiem. Zadzwoń, a przekażemy
+            kontakt.
           </p>
+          <a
+            href="tel:502732306"
+            class="mt-auto inline-flex items-center justify-center bg-[#1AA3A5] hover:bg-[#2BB8BA] text-white font-bold text-sm sm:text-base px-5 py-3 rounded-full transition-all shadow-lg shadow-[#1AA3A5]/25 text-center"
+          >
+            Zadzwoń po wycenę: 502 732 306
+          </a>
         </div>
       </div>
     </section>
 
     <section
-      class="bg-gray-50 rounded-[40px] shadow-lg p-8 md:p-12 mb-20 border border-gray-200"
+      class="bg-gray-50 rounded-3xl md:rounded-[2.5rem] shadow-lg p-8 md:p-12 mb-20 border border-gray-200"
     >
       <div class="text-center mb-8">
-        <h2 class="text-3xl font-black text-[#002333] mb-3">
+        <h2 class="text-2xl md:text-3xl font-black text-[#002333] mb-3">
           Wyślij zapytanie
         </h2>
         <p class="text-gray-600">
-          Chcesz poznać aktualną cenę złomu lub koszt transportu piasku? Napisz
-          do nas!
+          Pytanie o skup złomu, odbiór albo transport piasku? Napisz — oddzwonimy.
         </p>
       </div>
 
@@ -207,7 +260,7 @@ import Layout from "../layouts/Layout.astro";
               type="text"
               name="name"
               required
-              class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white"
+              class="w-full px-5 py-4 rounded-xl border-2 border-slate-300 bg-white focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 focus:outline-none transition-colors"
             />
           </div>
           <div>
@@ -218,7 +271,7 @@ import Layout from "../layouts/Layout.astro";
               type="tel"
               name="phone"
               required
-              class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white"
+              class="w-full px-5 py-4 rounded-xl border-2 border-slate-300 bg-white focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 focus:outline-none transition-colors"
             />
           </div>
         </div>
@@ -231,7 +284,7 @@ import Layout from "../layouts/Layout.astro";
             type="email"
             name="email"
             required
-            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white"
+            class="w-full px-5 py-4 rounded-xl border-2 border-slate-300 bg-white focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 focus:outline-none transition-colors"
           />
         </div>
 
@@ -244,20 +297,23 @@ import Layout from "../layouts/Layout.astro";
             rows="5"
             required
             placeholder="Napisz, jakiej ilości materiału dotyczy wycena..."
-            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#159A9C] focus:outline-none transition-colors bg-white resize-none"
+            class="w-full px-5 py-4 rounded-xl border-2 border-slate-300 bg-white focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 focus:outline-none transition-colors resize-none"
           ></textarea>
         </div>
         <button
           type="submit"
-          class="w-full bg-[#0E7A7C] text-white font-bold text-xl py-5 rounded-xl hover:bg-[#0C6E70] transition-colors shadow-lg"
+          class="w-full bg-[#1AA3A5] text-white font-bold text-xl py-5 rounded-xl hover:bg-[#2BB8BA] transition-colors shadow-lg"
         >
-          Wyślij wiadomość 🚀
+          Wyślij wiadomość
         </button>
-        <p class="text-xs text-gray-400 text-center mt-4">
+        <p class="text-sm text-slate-600 text-center mt-3 font-medium">
+          Zwykle odpowiadamy tego samego dnia lub w ciągu kilku godzin.
+        </p>
+        <p class="text-xs text-slate-500 text-center mt-3">
           Wysyłając wiadomość, wyrażasz zgodę na przetwarzanie swoich danych
           osobowych w celu obsługi zapytania. Szczegóły znajdziesz w naszej <a
             href="/polityka-cookies"
-            class="text-[#159A9C] hover:underline"
+            class="text-teal-700 font-semibold hover:underline"
             >Polityce Cookies i Prywatności</a
           >.
         </p>
@@ -310,6 +366,12 @@ import Layout from "../layouts/Layout.astro";
       </li>
       <li class="py-4">
         <a
+          href="/#faq"
+          class="mobile-link hover:text-[#159A9C] transition-colors">FAQ</a
+        >
+      </li>
+      <li class="py-4">
+        <a
           href="/#contact"
           class="mobile-link hover:text-[#159A9C] transition-colors">Kontakt</a
         >
@@ -317,8 +379,8 @@ import Layout from "../layouts/Layout.astro";
     </ul>
     <a
       href="tel:502732306"
-      class="mt-20 bg-red-600 text-white px-16 py-5 rounded-full font-bold text-3xl shadow-lg hover:bg-red-700 transition-colors"
-      >📞 Zadzwoń</a
+      class="mt-20 bg-[#0E7A7C] text-white px-16 py-5 rounded-full font-bold text-3xl shadow-lg hover:bg-[#0C6E70] transition-colors"
+      >Zadzwoń</a
     >
   </div>
 
