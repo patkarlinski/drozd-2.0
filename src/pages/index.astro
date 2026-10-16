@@ -69,6 +69,8 @@ const faqJsonLd = {
       <img
         src="/img/scrap.webp"
         alt="Drozd Logo"
+        width="256"
+        height="256"
         class="w-14 h-14 sm:w-16 sm:h-16 object-contain"
       />
       <span
@@ -131,6 +133,8 @@ const faqJsonLd = {
         id="mobile-menu-btn"
         class="lg:hidden p-1 text-[#002333] hover:text-[#159A9C] focus:outline-none transition-colors"
         aria-label="Otwórz menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -138,6 +142,7 @@ const faqJsonLd = {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          aria-hidden="true"
         >
           <path
             stroke-linecap="round"
@@ -156,6 +161,8 @@ const faqJsonLd = {
       <img
         src="/img/tlo3.webp"
         alt="Złomowisko Drozd w Policach"
+        width="575"
+        height="339"
         class="w-full h-full object-cover opacity-40"
         fetchpriority="high"
       />
@@ -291,6 +298,8 @@ const faqJsonLd = {
       <img
         src="/img/tlo4.webp"
         alt="Skup złomu i metali kolorowych w Policach"
+        width="2000"
+        height="1333"
         class="absolute inset-0 w-full h-full object-cover opacity-40"
         loading="lazy"
         decoding="async"
@@ -365,6 +374,8 @@ const faqJsonLd = {
       <img
         src="/img/tlo2.webp"
         alt="Piasek i kruszywa Police"
+        width="614"
+        height="412"
         class="absolute inset-0 w-full h-full object-cover opacity-35"
         loading="lazy"
         decoding="async"
@@ -665,6 +676,7 @@ const faqJsonLd = {
               <a
                 href="https://maps.google.com/?q=Stefana+Starzyńskiego+15,72-010+Police"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="text-[#159A9C] font-bold text-xl md:text-2xl hover:text-white transition-colors"
               >
                 ul. Starzyńskiego 15, 72-010 Police
@@ -787,6 +799,8 @@ const faqJsonLd = {
         menu?.classList.toggle("hidden");
         menu?.classList.toggle("flex");
         document.body.classList.toggle("overflow-hidden");
+        const open = menu?.classList.contains("flex");
+        btn?.setAttribute("aria-expanded", open ? "true" : "false");
       }
 
       if (btn && closeBtn && menu) {
