@@ -176,6 +176,23 @@ const localBusinessLd = {
             banner.classList.add("hidden");
           });
         }
+
+        // Chrome + scroll-smooth: kotwice typu /oferta#piasek często nie scrollują na desktopie
+        const scrollToHash = () => {
+          const id = decodeURIComponent(window.location.hash.slice(1));
+          if (!id) return;
+          const el = document.getElementById(id);
+          if (!el) return;
+          el.scrollIntoView({ behavior: "auto", block: "start" });
+        };
+
+        if (window.location.hash) {
+          requestAnimationFrame(() => {
+            scrollToHash();
+            // drugi pass po layoutcie (obrazy / fonty)
+            window.setTimeout(scrollToHash, 100);
+          });
+        }
       });
     </script>
     <script
