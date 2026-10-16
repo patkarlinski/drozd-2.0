@@ -7,3 +7,18 @@
 [id="contact"] {
   scroll-margin-top: 6rem;
 }
+
+/*
+  Listy punktowane: hanging indent (zawinięty tekst pod tekstem, nie pod kropką).
+  Celowane tylko w ul.list-disc — menu nawigacyjne bez list-disc zostają bez zmian.
+*/
+ul.list-disc {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.25em;
+}
+
+ul.list-disc > li {
+  line-height: 1.5;
+  padding-left: 0.25em;
+}
